@@ -1,0 +1,23 @@
+{
+    "blogs" : [
+      {
+        "title": "My blog1",
+        "body": "First blog in the website",
+        "author": "Nithin",
+        "id": 1
+      },
+      {
+        "title": "My blog2",
+        "body": "Second blog in the website",
+        "author": "Nithin Kumar",
+        "id": 2
+      },
+      {
+        "title": "My blog3",
+        "body": "Third blog in the website",
+        "author": "Eruventi Nithin Kumar",
+        "id": 3
+      }
+    ]
+}
+  
