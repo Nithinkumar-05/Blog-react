@@ -73,7 +73,7 @@
   box-shadow: 1px 3px 5px rgba(0,0,0,0.2);
 }
 
-.blog-preview h2{
+.blog-preview h2,.about h1,.create h1{
   font-size: 20px;
   color: #f1356d;
   margin-bottom: 8px;
