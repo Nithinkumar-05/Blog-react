@@ -1,23 +1,52 @@
 {
-    "blogs" : [
-      {
-        "title": "My blog1",
-        "body": "First blog in the website",
-        "author": "Nithin",
-        "id": 1
-      },
-      {
-        "title": "My blog2",
-        "body": "Second blog in the website",
-        "author": "Nithin Kumar",
-        "id": 2
-      },
-      {
-        "title": "My blog3",
-        "body": "Third blog in the website",
-        "author": "Eruventi Nithin Kumar",
-        "id": 3
-      }
-    ]
+  "blogs": [
+    {
+      "title": "My blog1",
+      "body": "First blog in the website",
+      "author": "Nithin",
+      "id": "1"
+    },
+    {
+      "title": "My blog2",
+      "body": "Second blog in the website",
+      "author": "Nithin Kumar",
+      "id": "2"
+    },
+    {
+      "title": "My blog3",
+      "body": "Third blog in the website",
+      "author": "Eruventi Nithin Kumar",
+      "id": "3"
+    },
+    {
+      "id": "c2a2",
+      "title": "The day in my life",
+      "body": "The day is 23/02/2024.\nWorst day in my life.",
+      "author": "Nithin"
+    },
+    {
+      "id": "3b2d",
+      "title": "Life sucks",
+      "body": "The life we dream about always ends in a miserable state.",
+      "author": "Mario"
+    },
+    {
+      "id": "f33d",
+      "title": "Yours day",
+      "body": "great day",
+      "author": "Nithin"
+    },
+    {
+      "id": "5209",
+      "title": "Have me",
+      "body": "have me",
+      "author": "Eruventi Nithin Kumar"
+    },
+    {
+      "id": "539c",
+      "title": "Mount Everest",
+      "body": "Peak to reach over",
+      "author": "Nithin"
+    }
+  ]
 }
-  
