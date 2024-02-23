@@ -1,34 +1,44 @@
 import React, { useState } from "react";
-
+import { useNavigate} from 'react-router-dom';
 const Create = () => {
     const [title, setTitle] = useState("");
     const [body, setBody] = useState("");
     const [author, setAuthor] = useState("");
     const [isPending, setIsPending] = useState(false);
+    const history = useNavigate();
+
+
+
     const handleSubmit = (e) => {
         e.preventDefault();
         const blog = { title, body, author };
-        //console.log(blog);
-        // Reset form fields after submission
-        setTitle("");
-        setBody("");
-        setAuthor("");
-
+    
         setIsPending(true);
-        fetch('http://localhost:8000/blogs',{
-            method:'POST',
-            headers:{
-                'Content-Type':'application/json'
+        fetch('http://localhost:8000/blogs', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
             },
-            body:JSON.stringify(blog)
-        }).then((res)=> {
-            res.json();
-            setTimeout(function(){setIsPending(false)},2500);
-            //setIsPending(false);
+            body: JSON.stringify(blog)
         })
-        .catch((err)=>{console.log(err)})
+        .then(res => {
+            if (!res.ok) {
+                throw new Error('Failed to add blog');
+            }
+            return res.json();
+        })
+        .then(data => {
+            console.log('Blog added successfully', data);
+            setIsPending(false);
+            // Redirect to home page after successful submission
+            history('/');
+        })
+        .catch(err => {
+            setIsPending(false);
+            console.error('Error adding blog:', err);
+        });
     };
-
+    
     return ( 
         <div className="create">
             <h1>Add a new blog</h1>

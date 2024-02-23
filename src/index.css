@@ -8,7 +8,9 @@
   font-style: normal;
   color: #333;
 }
-
+.mainlogo{
+  color: #f1356d;
+}
 .navbar {
   padding: 20px;
   display: flex;
@@ -131,7 +133,7 @@
   box-sizing: border-box;
   display: block;
 }
-.create button {
+.create button ,.delete{
   background: #f1356d;
   color: #fff;
   border: 0;
